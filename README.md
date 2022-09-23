@@ -1,0 +1,2 @@
+# EzElo
+An elo manager :)
