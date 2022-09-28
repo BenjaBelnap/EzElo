@@ -5,6 +5,8 @@ using Microsoft.AspNetCore.SpaServices.ReactDevelopmentServer;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.EntityFrameworkCore;
+using TodoApi.Models;
 
 namespace EzEloReactProject
 {
@@ -23,7 +25,14 @@ namespace EzEloReactProject
 
             services.AddControllersWithViews();
 
+            services.AddDbContext<TodoContext>(opt =>
+                                   opt.UseInMemoryDatabase("TodoList"));
+            //services.AddSwaggerGen(c =>
+            //{
+            //    c.SwaggerDoc("v1", new OpenApiInfo { Title = "TodoApi", Version = "v1" });
+            //});
             // In production, the React files will be served from this directory
+
             services.AddSpaStaticFiles(configuration =>
             {
                 configuration.RootPath = "ClientApp/build";
