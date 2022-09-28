@@ -1,6 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\EzEloReactProject",
+    "\\EzEloReactProject\\EzEloReactProject",
+    "\\EzEloReactProject\\EzEloReactProject\\Sql Migration Scripts"
   ],
+  "SelectedNode": "\\EzEloReactProject\\EzEloReactProject.sln",
   "PreviewInSolutionExplorer": false
 }
